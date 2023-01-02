@@ -16,7 +16,8 @@ class SecondActivity : AppCompatActivity() {
         binding.btnRepassData.setOnClickListener { passDataBackToMainActivity() }
 
         // get data from main activity
-        val data = intent.getStringExtra("data")
+        val bundle = intent.extras
+        val data = bundle?.get("data_object")
         Log.w(TAG, "data = $data")
     }
 

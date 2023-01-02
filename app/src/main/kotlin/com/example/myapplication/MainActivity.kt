@@ -18,11 +18,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun passDataToSecondActivity() {
-        val data = "happy new year"
+        val data = User("em anh Tung", 20)
         Log.w(TAG, "data = $data")
 
         val intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra("data", data)
+        val bundle = Bundle()
+        bundle.putSerializable("data_object", data)
+        intent.putExtras(bundle)
         startActivity(intent)
     }
 }
