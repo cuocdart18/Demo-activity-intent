@@ -20,10 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" />
         <activity
-            android:name=".ThirdActivity"
+            android:name=".SecondActivity"
             android:launchMode="singleTask" />
+        <activity android:name=".ThirdActivity" />
         <activity android:name=".FourthActivity" />
     </application>
 
