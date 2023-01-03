@@ -18,12 +18,17 @@ class ThirdActivity : AppCompatActivity() {
             val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
+        binding.btnOpenThisActivity.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
+        }
 
         Log.w(TAG, "on create and task id = $taskId")
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
+        Log.w(TAG, "on new intent and task id = $taskId")
     }
 
     override fun onDestroy() {

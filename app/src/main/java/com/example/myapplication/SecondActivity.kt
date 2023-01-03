@@ -24,6 +24,7 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
+        Log.w(TAG, "on new intent and task id = $taskId")
     }
 
     override fun onDestroy() {
