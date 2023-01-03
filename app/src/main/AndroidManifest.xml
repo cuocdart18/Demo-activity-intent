@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleInstancePerTask" />
         <activity android:name=".ThirdActivity" />
         <activity android:name=".FourthActivity" />
     </application>
