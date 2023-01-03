@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
+        binding.btnOpenAActivity.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         Log.w(TAG, "on create and task id = $taskId")
     }

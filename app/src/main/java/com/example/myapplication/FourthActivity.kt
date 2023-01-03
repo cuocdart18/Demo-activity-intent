@@ -14,8 +14,8 @@ class FourthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGlobalBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnOpenBActivity.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+        binding.btnOpenAActivity.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
